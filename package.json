@@ -1,0 +1,44 @@
+{
+  "name": "uwv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:omc": "openapi-typescript ./dependencies/omc/swagger.json -o ./src/network/omc/generated.ts --enum"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "@tanstack/match-sorter-utils": "^8.19.4",
+    "@tanstack/react-form": "^1.11.1",
+    "@tanstack/react-query": "^5.76.1",
+    "@tanstack/react-table": "^8.21.3",
+    "@zodios/core": "^10.9.6",
+    "jose": "^6.0.10",
+    "jsonwebtoken": "^9.0.2",
+    "next": "15.3.1",
+    "openapi-fetch": "^0.14.0",
+    "openapi-typescript": "^7.6.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
